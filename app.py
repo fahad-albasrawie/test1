@@ -18,6 +18,3 @@ def check_plyer_id():
         return render_template("answer.html", posible_words=posible_answers)
     return render_template("word_not_found.html", posible_answers=mixed_word)
  
-if __name__ == "__main__":
-    app.run()
-    #app.run(debug=True)
