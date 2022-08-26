@@ -3,7 +3,7 @@ from wordArrangement import arrange_word, get_all_words
 
 app = Flask("__name__")
 app.config["SECRET_KEY"] = "habboon"
-@app.route("/", methods=["POST", "GET"])
+@app.route("/arrange", methods=["POST", "GET"])
 def home():
     return render_template("index.html")
     #return render_template("output.html", playerID=playerID)
