@@ -5,7 +5,7 @@ app = Flask("__name__")
 app.config["SECRET_KEY"] = "habboon"
 @app.route("/", methods=["POST", "GET"])
 def home():
-    return render_template("home.html")
+    return render_template("index.html")
     #return render_template("output.html", playerID=playerID)
     
 data = get_all_words()
